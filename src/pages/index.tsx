@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Header from '../components/header'
 
 import blogStyles from '../styles/blog.module.css'
 import sharedStyles from '../styles/shared.module.css'
@@ -44,6 +45,7 @@ export async function unstable_getStaticProps() {
 export default ({ posts = [] }) => {
   return (
     <>
+      <Header titlePre="Blog" />
       <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
         <h1>My Notion Blog</h1>
         {posts.length === 0 && (

@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Header from '../components/header'
 import Heading from '../components/heading'
 import components from '../components/dynamic'
 import ReactJSXParser from '@zeit/react-jsx-parser'
@@ -72,6 +73,7 @@ const RenderPost = ({ post, redirect }) => {
 
   return (
     <>
+      <Header titlePre={post.Page} />
       <div className={blogStyles.post}>
         <h1>{post.Page || ''}</h1>
         {post.Authors.length > 0 && (
