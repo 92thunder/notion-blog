@@ -283,13 +283,6 @@ h1 {
   letter-spacing: -0.05rem;
 }
 
-h2 {
-  font-weight: 300;
-  font-size: 1.25rem;
-  letter-spacing: -0.02rem;
-  color: var(--accents-3);
-}
-
 .video {
   width: 1080px;
   max-width: calc(100vw - 40px);
