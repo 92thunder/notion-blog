@@ -1,13 +1,13 @@
 import Link from 'next/link'
-import Header from '../../components/header'
+import Header from '../components/header'
 
-import blogStyles from '../../styles/blog.module.css'
-import sharedStyles from '../../styles/shared.module.css'
+import blogStyles from '../styles/blog.module.css'
+import sharedStyles from '../styles/shared.module.css'
 
-import { getBlogLink, getDateStr, postIsReady } from '../../lib/blog-helpers'
-import { textBlock } from '../../lib/notion/renderers'
-import getNotionUsers from '../../lib/notion/getNotionUsers'
-import getBlogIndex from '../../lib/notion/getBlogIndex'
+import { getBlogLink, getDateStr, postIsReady } from '../lib/blog-helpers'
+import { textBlock } from '../lib/notion/renderers'
+import getNotionUsers from '../lib/notion/getNotionUsers'
+import getBlogIndex from '../lib/notion/getBlogIndex'
 
 export async function unstable_getStaticProps() {
   const postsTable = await getBlogIndex()
