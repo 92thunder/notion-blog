@@ -4,8 +4,8 @@
   --gap: 1rem;
   --gap-double: 2rem;
 
-  --bg: #fff;
-  --fg: #000;
+  --bg: #363636;
+  --fg: #fff;
   --accents-1: #111;
   --accents-2: #333;
   --accents-3: #888;
@@ -38,8 +38,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  background-image: radial-gradient(#ddd 1px, transparent 1px),
-    radial-gradient(#ddd 1px, transparent 1px);
   background-position: 0 0, 25px 25px;
   background-attachment: fixed;
   background-size: 50px 50px;
@@ -252,11 +250,11 @@ figure {
 }
 
 a {
-  color: #0070f3;
+  color: #fff;
   text-decoration: none;
 }
 a:hover {
-  color: #3291ff;
+  color: #ddd;
 }
 
 .links {
@@ -278,7 +276,8 @@ mark {
 }
 
 h1 {
-  margin: var(--gap-double) 0 calc(0.5 * var(--gap)) 0;
+  margin: 0;
+  padding: var(--gap-double) 0 calc(0.5 * var(--gap)) 0;
   font-size: 2.25rem;
   font-weight: 800;
   letter-spacing: -0.05rem;
@@ -306,7 +305,7 @@ h2 {
 }
 
 p {
-  color: #555;
+  color: #ddd;
   font-weight: 400;
   font-size: 0.94rem;
   line-height: 1.7;
