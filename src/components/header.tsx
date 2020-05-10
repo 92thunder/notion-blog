@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-const ogImageUrl = 'https://92thunder.dev/ogp.png'
+const ogImageUrl = 'https://blog.92thunder.dev/og-image.png'
 
 export default ({ titlePre = '' }) => {
   const title = `${titlePre} | 92thunder blog`
