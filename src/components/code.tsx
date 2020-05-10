@@ -4,7 +4,7 @@ import 'prismjs/components/prism-jsx'
 const Code = ({ children, language = 'javascript' }) => {
   return (
     <>
-      <pre>
+      <pre className="dark">
         <code
           dangerouslySetInnerHTML={{
             __html: Prism.highlight(
@@ -13,6 +13,7 @@ const Code = ({ children, language = 'javascript' }) => {
                 Prism.languages.javascript
             ),
           }}
+          className="dark"
         />
       </pre>
 
@@ -25,7 +26,7 @@ const Code = ({ children, language = 'javascript' }) => {
           display: block;
           padding: 0.8rem;
           line-height: 1.5;
-          background: #f5f5f5;
+          background: #1e1e1e;
           font-size: 0.75rem;
           border-radius: var(--radius);
         }
