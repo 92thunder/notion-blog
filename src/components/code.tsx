@@ -23,6 +23,7 @@ const Code = ({ children, language = 'javascript' }) => {
         }
 
         code {
+          overflow: auto;
           display: block;
           padding: 0.8rem;
           line-height: 1.5;
