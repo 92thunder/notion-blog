@@ -44,7 +44,7 @@ export async function getStaticProps({ preview }) {
   }
 }
 
-export default ({ posts = [], preview }) => {
+const Index = ({ posts = [], preview }) => {
   return (
     <>
       <Header titlePre="Blog" />
@@ -96,3 +96,4 @@ export default ({ posts = [], preview }) => {
     </>
   )
 }
+export default Index

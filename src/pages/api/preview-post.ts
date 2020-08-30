@@ -19,12 +19,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   if (!post) {
     console.log(`Failed to find post for slug: ${req.query.slug}`)
-    return {
-      props: {
-        redirect: '/blog',
-      },
-      revalidate: 5,
-    }
+    return res.status(404).json({
+      message: `no post found for ${req.query.slug}`,
+      redirect: '/blog',
+    })
   }
 
   const postData = await getPageData(post.id)
