@@ -10,7 +10,7 @@ export const getDateStr = date => {
   })
 }
 
-export const postIsReady = (post: any) => {
+export const postIsPublished = (post: any) => {
   return process.env.NODE_ENV !== 'production' || post.Published === 'Yes'
 }
 
