@@ -18,7 +18,7 @@
     "github-slugger": "^1.2.1",
     "next": "^9.5.2",
     "next-ga": "^2.3.4",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.23.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "uuid": "^8.3.0"
